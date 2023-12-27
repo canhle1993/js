@@ -13,25 +13,24 @@
 // // k. Liệt kê danh sách các số chẵn trong mảng trên // push
 // // l. Liệt kê danh sách các số lẽ trong mảng trên // push
 
-
 // // a. In ra màn hình console tất cả các phần tử của mảng
 // let arr = [3, 451, 5, 2, 6, 76, 3, 5, 1, 243, 6, 4]
 // for(let i = 0; i < arr.length; i++){
-//     console.log('phan tu thu: %s la: %s', i, arr[i])
+//     console.log('Phan tu thu %s la %s', i, arr[i])
 // }
 
 // // b. Tính tổng các phần tử trong mảng
 // let arr = [3, 451, 5, 2, 6, 76, 3, 5, 1, 243, 6, 4]
 // let tong = 0
-// for(let i = 0; i < arr.length; i++){
+// for (let i = 0; i < arr.length; i++) {
 //     tong = tong + arr[i]
 // }
-// console.log('tong cua cac phan tu trong mang la:', tong)
+// console.log(tong)
 
 // // c. Tìm phần tử lớn nhất, phần tử nhỏ nhất trong mảng
 // let arr = [3, 451, 5, 2, 6, 76, 3, 5, 1, 243, 6, 4]
-// max = arr[0]
-// min = arr[0]
+// let max = arr[0]
+// let min = arr[0]
 // for(let i = 0; i < arr.length; i++){
 //     if(arr[i] > max){
 //         max = arr[i]
@@ -40,17 +39,17 @@
 //         min = arr[i]
 //     }
 // }
-// console.log('Phan tu lon nhat la: %s, Phan Tu nho nhat la: %s', max, min)
+// console.log('phan tu lon nhat: %s, phan tu nho nhat: %s', max, min)
 
 // // d. Tính trung bình cộng các phần tử trong mảng
 // let arr = [3, 451, 5, 2, 6, 76, 3, 5, 1, 243, 6, 4]
 // let tong = 0
-// let TBC = 0
-// for(let i =0; i < arr.length; i++){
+// let trungbinhcong = 0
+// for(let i = 0; i < arr.length; i++){
 //     tong = tong + arr[i]
-//     TBC = tong/arr.length
+//     trungbinhcong = tong/arr.length
 // }
-// console.log('TBC cua cac phan tu trong mang la:', TBC)
+// console.log(trungbinhcong)
 
 // // e. Đảo ngược thứ tự các phần tử trong mảng
 // let arr = [3, 451, 5, 2, 6, 76, 3, 5, 1, 243, 6, 4]
@@ -58,47 +57,49 @@
 //     console.log(arr[i])
 // }
 
-// // f. Tìm số lần xuất hiện của mỗi phần tử trong mảng
-// let arr = [3, 451, 5, 2, 6, 76, 3, 5, 1, 243, 6, 4]
-// let soLanXuatHien = {}
-// for(let i = 0; i < arr.length; i++){
-//     if(soLanXuatHien[arr[i]]===undefined){
-//         soLanXuatHien[arr[i]] = 1
-//     }
-//     else{
-//         soLanXuatHien[arr[i]] = soLanXuatHien[arr[i]] + 1
-//     }
-// }
-// console.log('So lan xuat hien cua phan tu la:', soLanXuatHien)
+// f. Tìm số lần xuất hiện của mỗi phần tử trong mảng
+let arr = [3, 451, 5, 2, 6, 76, 3, 5, 1, 243, 6, 4]
+let solanxuathien = {}
+for(let i = 0; i < arr.length; i++){
+    if(solanxuathien[arr[i]] === undefined){
+        solanxuathien[arr[i]] = 1
+    }
+    else{
+        solanxuathien[arr[i]] = solanxuathien[arr[i]] + 1
+    }
+}
+console.log(solanxuathien)
 
 // // g. Chèn phần tử 117 vào đầu mảng
 // let arr = [3, 451, 5, 2, 6, 76, 3, 5, 1, 243, 6, 4]
-// for(let i = arr.length; i >=0; i--){
-//     arr[i] =  arr[i-1]
+// for(let i = arr.length -1; i = 0; i-- ){
+//     arr[i] = arr[i - 1]
 // }
 // arr[0] = 117
 // console.log(arr)
 
-// // h. Kiểm tra xem mảng có phải là mỗi dãy số tăng dần hay không
+// h. Kiểm tra xem mảng có phải là mỗi dãy số tăng dần hay không
 // let arr = [3, 451, 5, 2, 6, 76, 3, 5, 1, 243, 6, 4]
 // let mangtangdan = true
-// for(let i = 0; i < arr.length; i++){
-//     if(arr[i] > arr[i + 1]){
-//         mangtangdan = false
+// for(let i = 0; i < arr.length-1; i++){
+//     for(let j = i + 1; j < arr.length; j++){
+//         if (arr[i] > arr[j]){
+//             mangtangdan = false
+//         }
 //     }
 // }
 // if(mangtangdan === true){
-//     console.log('Mang tang dan')
+//     console.log('Mang tang da')
 // }
 // else{
-//     console.log('mang khong tang dan')
+//     console.log('Khong phai mang tang dan')
 // }
 
 // // i. Sắp xếp mảng theo thứ tự tăng dần
 // let arr = [3, 451, 5, 2, 6, 76, 3, 5, 1, 243, 6, 4]
-// for(let i = 0; i < arr.length-1; i++){
+// for(let i = 0; i < arr.length -1; i++){
 //     for(let j = i + 1; j < arr.length; j++){
-//         if (arr[i] > arr[j]){
+//         if(arr[i] > arr[j]){
 //             tam = arr[i]
 //             arr[i] = arr[j]
 //             arr[j] = tam
@@ -109,8 +110,8 @@
 
 // // j. Sắp xếp mảng theo thứ tự giảm dần
 // let arr = [3, 451, 5, 2, 6, 76, 3, 5, 1, 243, 6, 4]
-// for( let i = 0; i < arr.length - 1; i++){
-//     for(let j = i+1; j < arr.length; j++){
+// for(let i = 0; i < arr.length - 1; i++){
+//     for(let j = i + 1; j < arr.length; j++){
 //         if(arr[i] < arr[j]){
 //             tam = arr[i]
 //             arr[i] = arr[j]
@@ -122,17 +123,23 @@
 
 // // k. Liệt kê danh sách các số chẵn trong mảng trên
 // let arr = [3, 451, 5, 2, 6, 76, 3, 5, 1, 243, 6, 4]
-// let sochan = []
-// let sole = []
-// for(let i = 0; i < arr.length; i++){
-//     if(arr[i]%2 === 0){
-//         sochan[sochan.length] = arr[i]
-//     }
-//     else{
-//         sole[sole.length] = arr[i]
+// let mangsochan = []
+// for( let i = 0; i < arr.length; i++){
+//     if(arr[i] % 2 === 0){
+//         mangsochan[mangsochan.length] = arr[i]
 //     }
 // }
-// console.log('mang so chan la: %s, mang so le la: %s', sochan, sole)
+// console.log(mangsochan)
+
+// // l. Liệt kê danh sách các số lẽ trong mảng trên
+// let arr = [3, 451, 5, 2, 6, 76, 3, 5, 1, 243, 6, 4]
+// let mangsole = []
+// for(let i = 0; i < arr.length; i++){
+//     if(arr[i] % 2 !==0){
+//         mangsole[mangsole.length] = arr[i]
+//     }
+// }
+// console.log(mangsole)
 
 
 //Bài 2: Cho mảng 1 chiều: arr2 = [5, -2, 5, -6, 23, 69, 100, -13, 10, 0, 14]
@@ -146,35 +153,62 @@
 
 // // a. Tìm các cặp số có tổng bằng 10
 // let arr2 = [5, -2, 5, -6, 23, 69, 100, -13, 10, 0, 14]
-// for(let i = 0; i < arr2.length; i++){
-//     for(let j = i +1; j < arr2.length; j++){
+// for (let i = 0; i < arr2.length - 1; i++){
+//     for(let j = i + 1; j < arr2.length; j++){
 //         if(arr2[i] + arr2[j] === 10){
-//             console.log('tong 2 cap so %s va %s bang 10', arr2[i], arr2[j])
+//             console.log(arr2[i], arr2[j])
 //         }
 //     }
 // }
+
+// // b. Xoá các phần tử trùng nhau trong mảng
+// let arr2 = [5, -2, 5, -6, 23, 69, 100, -13, 10, 0, 14]
+// let cacphantutrungnhau = {}
+// let cacphantudaxoa = []
+// for(let i = 0; i < arr2.length; i++){
+//     if(cacphantutrungnhau[arr2[i]] === undefined){
+//         cacphantutrungnhau[arr2[i]] = 1
+//         cacphantudaxoa[cacphantudaxoa.length] = arr2[i] 
+//     }
+// }
+// console.log(cacphantudaxoa)
 
 // // d. Tính tổng 3 số lớn nhất trong mảng
 // let arr2 = [5, -2, 5, -6, 23, 69, 100, -13, 10, 0, 14]
-// let tong = 0
-// for(let i = 0; i < arr2.length-1; i++){
+// let tong3solonnhat = 0
+// for(let i =0; i < arr2.length - 1; i++){
 //     for(let j = i + 1; j < arr2.length; j++){
-//         if(arr2[i] < arr2[j]){
+//         if( arr2[i] < arr2[j]){
 //             tam = arr2[i]
 //             arr2[i] = arr2[j]
 //             arr2[j] = tam
 //         }
 //     }
 // }
-// tong = arr2[0] + arr2[1] + arr2[2]
-// console.log(tong)
+// tong3solonnhat = arr2[0] + arr2[1] + arr2[2]
+// console.log(tong3solonnhat)
+
+// // d-1. Tính tổng 3 số nho nhất trong mảng
+// let arr2 = [5, -2, 5, -6, 23, 69, 100, -13, 10, 0, 14]
+// let tong3sonhonhat = 0
+// for(let i = 0; i < arr2.length - 1; i++){
+//     for(let j = i + 1; j < arr2.length; j++){
+//         if(arr2[i] > arr2[j]){
+//             tam = arr2[i]
+//             arr2[i] = arr2[j]
+//             arr2[j] = tam
+//         }
+//     }
+// }
+// tong3sonhonhat = arr2[0] + arr2[1] + arr2[2]
+// console.log(tong3sonhonhat)
 
 // // e. Tính trung bình cộng 3 số lớn nhất trong mảng
 // let arr2 = [5, -2, 5, -6, 23, 69, 100, -13, 10, 0, 14]
-// let tong = 0
-// let trungbinhcong = 0
-// for(let i = 0; i < arr2.length; i++){
-//     for(let j = i + 1; j < arr2.length; j++){
+// let TBC3solonnhat = 0
+// let tong3solonnhat = 0
+// for(let i = 0; i < arr2.length -1; i++){
+//     for(let j = i+1; j < arr2.length; j++){
 //         if(arr2[i] < arr2[j]){
 //             tam = arr2[i]
 //             arr2[i] = arr2[j]
@@ -182,23 +216,31 @@
 //         }
 //     }
 // }
-// tong = arr2[0] + arr2[1] + arr2[2]
-// trungbinhcong = tong / 3
-// console.log('TBC 3 So la;', trungbinhcong)
+// tong3solonnhat = arr2[0] + arr2[1] + arr2[2]
+// TBC3solonnhat = tong3solonnhat / 3
+// console.log(TBC3solonnhat)
 
-
-// // f. Tìm độ lệch lớn nhất giữa các phần tử trong mảng (Gợi ý: max – min)
+// f. Tìm độ lệch lớn nhất giữa các phần tử trong mảng (Gợi ý: max – min)
 // let arr2 = [5, -2, 5, -6, 23, 69, 100, -13, 10, 0, 14]
 // let max = arr2[0]
-// let min =arr2[0]
-// let dotrenlech = 0
-// for(let i = 0; i < arr2.length; i++){
+// let min = arr2[0]
+// let dolech = 0
+// for(let i =0; i < arr2.length; i++){
 //     if(arr2[i] > max){
 //         max = arr2[i]
 //     }
 //     if(arr2[i] < min){
-//         min = arr2[i]
+//         min =arr2[i]
 //     }
 // }
-// dotrenlech = max - min
-// console.log('Do tren lech la:', dotrenlech)
+// dolech = max - min
+// console.log(dolech)
+
+// // c. Tính tổng n số tự nhiên đầu tiên, với n biến số được khai báo trước đó với giá trị là 200
+// let arr2 = [5, -2, 5, -6, 23, 69, 100, -13, 10, 0, 14]
+// let n = 200
+// let tong = 0
+// for (let i = 1; i <= n; i++) {
+//     tong = tong + i
+// }
+// console.log("Tổng của", n, "số tự nhiên đầu tiên là:", tong)

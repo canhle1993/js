@@ -42,10 +42,12 @@
 // pi=3.5
 // console.log(pi)
 // //f,l
-// var dienThoai = {ten: "iPhone 14",
-// hangSanXuat: "Apple",
-// mausac: "Trang",
-// gia: "1000USD"}
+// var dienThoai = {
+//     ten: "iPhone 14",
+//     hangSanXuat: "Apple",
+//     mausac: "Trang",
+//     gia: "1000USD"
+// }
 // console.log("Tên điện thoại:", dienThoai.ten)
 // console.log("Hãng sản xuất:", dienThoai.hangSanXuat)
 // console.log("Màu sắc:", dienThoai.mausac)
@@ -173,3 +175,5 @@
 // var theTich = (dai * rong * cao)*4
 // console.log("Tổng Thể tích của khối gỗ là:", theTich)
 // //chuyen doi khai bao qua ham so
+
+
