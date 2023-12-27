@@ -244,3 +244,4 @@ console.log(solanxuathien)
 //     tong = tong + i
 // }
 // console.log("Tổng của", n, "số tự nhiên đầu tiên là:", tong)
+///kjkkjh
