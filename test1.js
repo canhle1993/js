@@ -207,19 +207,19 @@
 //     let soKW = chiSoMoi - chiSoCu
 //     let tienDinhMuc = 0
 //     let tienVuotDinhMuc = 0
-    // if (soKW <= dinhMuc) {
-    //     tienDinhMuc = soKW * giaDinhMuc
-    // } else if (soKW > dinhMuc && soKW <= 2 * dinhMuc) {
-    //     tienDinhMuc = dinhMuc * giaDinhMuc
-    //     tienVuotDinhMuc = (soKW - dinhMuc) * giaDuoiDinhMuc
-    // } else if (soKW > 2 * dinhMuc && soKW <= 3 * dinhMuc) {
-    //     tienDinhMuc = dinhMuc * giaDinhMuc
-    //     tienVuotDinhMuc = dinhMuc * giaDuoiDinhMuc + (soKW - 2 * dinhMuc) * giaTrenDinhMucNho
-    // } else {
-    //     tienDinhMuc = dinhMuc * giaDinhMuc
-    //     tienVuotDinhMuc = dinhMuc * giaDuoiDinhMuc + dinhMuc * giaTrenDinhMucNho + (soKW - 3 * dinhMuc) * giaTrenDinhMucLon
-    // }
-    // tongTien = tienDinhMuc + tienVuotDinhMuc + phiThueBao
+//     if (soKW <= dinhMuc) {
+//         tienDinhMuc = soKW * giaDinhMuc
+//     } else if (soKW > dinhMuc && soKW <= 2 * dinhMuc) {
+//         tienDinhMuc = dinhMuc * giaDinhMuc
+//         tienVuotDinhMuc = (soKW - dinhMuc) * giaDuoiDinhMuc
+//     } else if (soKW > 2 * dinhMuc && soKW <= 3 * dinhMuc) {
+//         tienDinhMuc = dinhMuc * giaDinhMuc
+//         tienVuotDinhMuc = dinhMuc * giaDuoiDinhMuc + (soKW - 2 * dinhMuc) * giaTrenDinhMucNho
+//     } else {
+//         tienDinhMuc = dinhMuc * giaDinhMuc
+//         tienVuotDinhMuc = dinhMuc * giaDuoiDinhMuc + dinhMuc * giaTrenDinhMucNho + (soKW - 3 * dinhMuc) * giaTrenDinhMucLon
+//     }
+//     tongTien = tienDinhMuc + tienVuotDinhMuc + phiThueBao
 //     if (soKW <= dinhMuc) {
 //         tienDinhMuc = soKW * giaDinhMuc;
 //       } else if (soKW > dinhMuc && soKW <= 2 * dinhMuc) {
@@ -247,38 +247,37 @@
 //     console.log("Tien Tra Vuot Dinh Muc:", kq.tienvuotdinhmuc)
 //     console.log("Tong Tien Phai Tra:", kq.tongtien)
 
-//     function tinhTienDien(chiSoCu, chiSoMoi) {
-//         const phiThueBao = 1000;
-//         const dinhMuc = 50;
-//         const giaDinhMuc = 230;
-//         const giaVuongDinhMuc = 480;
-//         const giaVuong100KW = 700;
-//         const giaTren100KW = 900;
+    function tinhTienDien(chiSoCu, chiSoMoi) {
+        const phiThueBao = 1000
+        const dinhMuc = 50
+        const giaDinhMuc = 230
+        const giaVuongDinhMuc = 480
+        const giaVuong100KW = 700
+        const giaTren100KW = 900
       
-//         let soKW = chiSoMoi - chiSoCu;
-//         let tienDinhMuc = 0;
-//         let tienVuotDinhMuc = 0;
+        let soKW = chiSoMoi - chiSoCu
+        let tienDinhMuc = 0
+        let tienVuotDinhMuc = 0
       
-//         if (soKW <= dinhMuc) {
-//           tienDinhMuc = soKW * giaDinhMuc;
-//         } else if (soKW > dinhMuc && soKW <= 2 * dinhMuc) {
-//           tienDinhMuc = dinhMuc * giaDinhMuc;
-//           tienVuotDinhMuc = (soKW - dinhMuc) * giaVuongDinhMuc;
-//         } else if (soKW > 2 * dinhMuc && soKW <= 4 * dinhMuc) {
-//           tienDinhMuc = dinhMuc * giaDinhMuc;
-//           tienVuotDinhMuc = dinhMuc * giaVuongDinhMuc + (soKW - 3 * dinhMuc) * giaVuong100KW;
-//         } else if (soKW > 4 * dinhMuc) {
-//           tienDinhMuc = dinhMuc * giaDinhMuc;
-//           tienVuotDinhMuc = dinhMuc * giaVuongDinhMuc + dinhMuc * giaVuong100KW + (soKW - 4 * dinhMuc) * giaTren100KW;
-//         }
+        if (soKW <= dinhMuc) {
+          tienDinhMuc = soKW * giaDinhMuc
+        } else if (soKW > dinhMuc && soKW <= 2 * dinhMuc) {
+          tienDinhMuc = dinhMuc * giaDinhMuc
+          tienVuotDinhMuc = (soKW - dinhMuc) * giaVuongDinhMuc
+        } else if (soKW > 2 * dinhMuc && soKW <= 4 * dinhMuc) {
+          tienDinhMuc = dinhMuc * giaDinhMuc
+          tienVuotDinhMuc = dinhMuc * giaVuongDinhMuc + (soKW - 3 * dinhMuc) * giaVuong100KW
+        } else if (soKW > 4 * dinhMuc) {
+          tienDinhMuc = dinhMuc * giaDinhMuc
+          tienVuotDinhMuc = dinhMuc * giaVuongDinhMuc + dinhMuc * giaVuong100KW + (soKW - 4 * dinhMuc) * giaTren100KW;
+        }
       
-//         let tongTien = phiThueBao + tienDinhMuc + tienVuotDinhMuc;
-//         console.log("Chỉ số cũ:", chiSoCu);
-//         console.log("Chỉ số mới:", chiSoMoi);
-//         console.log("Tiền trả định mức:", tienDinhMuc, "đồng");
-//         console.log("Tiền trả vượt định mức:", tienVuotDinhMuc, "đồng");
-//         console.log("Tổng tiền phải trả:", tongTien, "đồng");
-//       }
+        let tongTien = phiThueBao + tienDinhMuc + tienVuotDinhMuc
+        console.log("Chỉ số cũ:", chiSoCu)
+        console.log("Chỉ số mới:", chiSoMoi)
+        console.log("Tiền trả định mức:", tienDinhMuc, "đồng")
+        console.log("Tiền trả vượt định mức:", tienVuotDinhMuc, "đồng")
+        console.log("Tổng tiền phải trả:", tongTien, "đồng")
+      }
+      tinhTienDien(10, 300)
       
-//       // Sử dụng hàm và nhập chỉ số cũ và mới từ bàn phím
-//       tinhTienDien(10, 300); // Thay thế 100 và 180 bằng chỉ số cũ và mới tương ứng

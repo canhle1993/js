@@ -234,3 +234,12 @@
 // }
 // dolechlonnhat = max - min
 // console.log("do lech lon nhat la:", dolechlonnhat)
+
+// // c. Tính tổng n số tự nhiên đầu tiên, với n biến số được khai báo trước đó với giá trị là 200
+// let arr2 = [5, -2, 5, -6, 23, 69, 100, -13, 10, 0, 14]
+// let n = 200
+// let tong = 0
+// for(let i = 0; i <= n; i++){
+//         tong =tong + i
+// }
+// console.log(tong)

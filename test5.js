@@ -58,18 +58,18 @@
 // }
 
 // f. Tìm số lần xuất hiện của mỗi phần tử trong mảng
-let arr = [3, 451, 5, 2, 6, 76, 3, 5, 1, 243, 6, 4]
-let solanxuathien = {}
-for(let i = 0; i < arr.length; i++){
-    if(solanxuathien[arr[i]] === undefined){
-        solanxuathien[arr[i]] = 1
-    }
-    else{
-        solanxuathien[arr[i]] = solanxuathien[arr[i]] + 1
-    }
-}
-console.log(solanxuathien)
-
+// let arr = [3, 451, 5, 2, 6, 76, 3, 5, 1, 243, 6, 4]
+// let tansuatxuathien = {}
+// for(i = 0; i < arr.length; i++){
+//     let phantuthui = arr[i]
+//     if(tansuatxuathien[phantuthui] === undefined){
+//         tansuatxuathien[phantuthui] = 1
+//     }
+//     else{
+//         tansuatxuathien[phantuthui]= tansuatxuathien[phantuthui] + 1
+//     }
+// }
+// console.log(tansuatxuathien)
 // // g. Chèn phần tử 117 vào đầu mảng
 // let arr = [3, 451, 5, 2, 6, 76, 3, 5, 1, 243, 6, 4]
 // for(let i = arr.length -1; i = 0; i-- ){
@@ -163,15 +163,18 @@ console.log(solanxuathien)
 
 // // b. Xoá các phần tử trùng nhau trong mảng
 // let arr2 = [5, -2, 5, -6, 23, 69, 100, -13, 10, 0, 14]
-// let cacphantutrungnhau = {}
-// let cacphantudaxoa = []
-// for(let i = 0; i < arr2.length; i++){
-//     if(cacphantutrungnhau[arr2[i]] === undefined){
-//         cacphantutrungnhau[arr2[i]] = 1
-//         cacphantudaxoa[cacphantudaxoa.length] = arr2[i] 
+// for(let i = 0 ; i < arr.length; i++){
+//     let solantrung = 0
+//     for(let j = 0; j < arr.length; j++){
+//         if(arr[i] === arr[j]){
+//             solantrung = solantrung + 1
+//         }
+//     }
+//     if(solantrung === 1){
+//         mang[mang.length] = arr[i]
 //     }
 // }
-// console.log(cacphantudaxoa)
+// console.log(mang)
 
 // // d. Tính tổng 3 số lớn nhất trong mảng
 // let arr2 = [5, -2, 5, -6, 23, 69, 100, -13, 10, 0, 14]
@@ -203,22 +206,49 @@ console.log(solanxuathien)
 // tong3sonhonhat = arr2[0] + arr2[1] + arr2[2]
 // console.log(tong3sonhonhat)
 
+
+
+
+
+
 // // e. Tính trung bình cộng 3 số lớn nhất trong mảng
-// let arr2 = [5, -2, 5, -6, 23, 69, 100, -13, 10, 0, 14]
-// let TBC3solonnhat = 0
-// let tong3solonnhat = 0
-// for(let i = 0; i < arr2.length -1; i++){
-//     for(let j = i+1; j < arr2.length; j++){
-//         if(arr2[i] < arr2[j]){
-//             tam = arr2[i]
-//             arr2[i] = arr2[j]
-//             arr2[j] = tam
-//         }
+let arr2 = [5, -2, 5, -6, 23, 69, 100, -13, 10, 0, 14]
+let tong = 0
+let TBC = 0
+for(let i =0; i < arr2.length; i++){
+    for(let j = i +1; j < arr2.length; j++){
+        if(arr2[i] < arr2[j]){
+            tam = arr2[i]
+            arr2[i] = arr2[j]
+            arr2[j] = tam
+        }
+    }
+}
+tong = arr2[0] + arr2[1] + arr2[2]
+TBC = tong/3
+console.log(TBC)
+
+//cach 2
+// let a=0, b=0,c=0
+
+// for (let i=0;i<arr2.length;i++){
+    
+//     if(arr2[i]>a){
+//         c=b
+//         b=a
+//         a=arr2[i]
 //     }
 // }
-// tong3solonnhat = arr2[0] + arr2[1] + arr2[2]
-// TBC3solonnhat = tong3solonnhat / 3
-// console.log(TBC3solonnhat)
+// console.log(a+"\r\n"+b+"\r\n"+c)
+
+
+
+
+
+
+
+
+
 
 // f. Tìm độ lệch lớn nhất giữa các phần tử trong mảng (Gợi ý: max – min)
 // let arr2 = [5, -2, 5, -6, 23, 69, 100, -13, 10, 0, 14]

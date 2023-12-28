@@ -202,26 +202,26 @@
 // // - 0% thuế thu nhập nếu lương dưới 8 triệu
 // // Lưu ý: Tiền lương của nhân viên sẽ được nhập vào từ tham số của hàm
 
-// function thuethunhapvaluongnet(luong){
-//     let thue = 0
-//     let luongNet =0
-//     if(luong>20000000){
-//         thue = 0.2*luong
-//     }
-//     else if(luong>=8000000 && luong<=15000000){
-//         thue = 0.15*luong
-//     }
-//     else if(luong>15000000 && luong<=20000000){
-//         thue = 0.18*luong
-//     }
-//     let luongNet = luong - thue
-//     return{
-//         Luongnet: luongNet,
-//         ThueThuNhap: thue
-//     }
-// }
-// var kq = thuethunhapvaluongnet(17000000)
-// console.log("Thue Thu Nhap La:"+ kq.ThueThuNhap + "Luong net la:" + kq.Luongnet)
+function thuethunhapvaluongnet(luong){
+    let thue = 0
+    let luongNet =0
+    if(luong>20000000){
+        thue = 0.2*luong
+    }
+    else if(luong>=8000000 && luong<=15000000){
+        thue = 0.15*luong
+    }
+    else if(luong>15000000 && luong<=20000000){
+        thue = 0.18*luong
+    }
+     luongNet = luong - thue
+    return{
+        Luongnet: luongNet,
+        ThueThuNhap: thue
+    }
+}
+var kq = thuethunhapvaluongnet(17000000)
+console.log("Thue Thu Nhap La:"+ kq.ThueThuNhap + "Luong net la:" + kq.Luongnet)
 //////
 // let arr = [3, 451, 5, 2, 6, 76, 3, 5, 1, 243, 6, 4]
 // let tansuatxuathien = {}
