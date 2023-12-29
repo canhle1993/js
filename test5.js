@@ -51,7 +51,7 @@
 // }
 // console.log(trungbinhcong)
 
-// // e. Đảo ngược thứ tự các phần tử trong mảng
+// e. Đảo ngược thứ tự các phần tử trong mảng
 // let arr = [3, 451, 5, 2, 6, 76, 3, 5, 1, 243, 6, 4]
 // for(let i = arr.length - 1; i >= 0; i--){
 //     console.log(arr[i])
@@ -126,7 +126,7 @@
 // let mangsochan = []
 // for( let i = 0; i < arr.length; i++){
 //     if(arr[i] % 2 === 0){
-//         mangsochan[mangsochan.length] = arr[i]
+//         mangsochan[mangsochan.length] =arr[i]
 //     }
 // }
 // console.log(mangsochan)
@@ -156,13 +156,14 @@
 // for (let i = 0; i < arr2.length - 1; i++){
 //     for(let j = i + 1; j < arr2.length; j++){
 //         if(arr2[i] + arr2[j] === 10){
-//             console.log(arr2[i], arr2[j])
+//             console.log('So %s + %s = 10',arr2[i], arr2[j])
 //         }
 //     }
 // }
 
 // // b. Xoá các phần tử trùng nhau trong mảng
-// let arr2 = [5, -2, 5, -6, 23, 69, 100, -13, 10, 0, 14]
+// let arr = [5, -2, 5, -6, 23, 69, 100, -13, 10, 0, 14]
+// let mang = []
 // for(let i = 0 ; i < arr.length; i++){
 //     let solantrung = 0
 //     for(let j = 0; j < arr.length; j++){
@@ -207,26 +208,22 @@
 // console.log(tong3sonhonhat)
 
 
-
-
-
-
 // // e. Tính trung bình cộng 3 số lớn nhất trong mảng
-let arr2 = [5, -2, 5, -6, 23, 69, 100, -13, 10, 0, 14]
-let tong = 0
-let TBC = 0
-for(let i =0; i < arr2.length; i++){
-    for(let j = i +1; j < arr2.length; j++){
-        if(arr2[i] < arr2[j]){
-            tam = arr2[i]
-            arr2[i] = arr2[j]
-            arr2[j] = tam
-        }
-    }
-}
-tong = arr2[0] + arr2[1] + arr2[2]
-TBC = tong/3
-console.log(TBC)
+// let arr2 = [5, -2, 5, -6, 23, 69, 100, -13, 10, 0, 14]
+// let tong = 0
+// let TBC = 0
+// for(let i =0; i < arr2.length; i++){
+//     for(let j = i +1; j < arr2.length; j++){
+//         if(arr2[i] < arr2[j]){
+//             tam = arr2[i]
+//             arr2[i] = arr2[j]
+//             arr2[j] = tam
+//         }
+//     }
+// }
+// tong = arr2[0] + arr2[1] + arr2[2]
+// TBC = tong/3
+// console.log(TBC)
 
 //cach 2
 // let a=0, b=0,c=0
@@ -274,3 +271,16 @@ console.log(TBC)
 //     tong = tong + i
 // }
 // console.log("Tổng của", n, "số tự nhiên đầu tiên là:", tong)
+
+
+// let arr = [3, 451, 5, 2, 6, 76, 3, 5, 1, 243, 6, 4]
+// let tansuatxuathien = {}
+// let mangtrung = []
+// for(i = 0; i < arr.length; i++){
+//     let phantuthui = arr[i]
+//     if(tansuatxuathien[phantuthui] === undefined){
+//         tansuatxuathien[phantuthui] = 1
+//         mangtrung[mangtrung.length] = arr[i]
+//     }
+// }
+// console.log(mangtrung)

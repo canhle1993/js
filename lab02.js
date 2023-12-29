@@ -202,26 +202,26 @@
 // // - 0% thuế thu nhập nếu lương dưới 8 triệu
 // // Lưu ý: Tiền lương của nhân viên sẽ được nhập vào từ tham số của hàm
 
-function thuethunhapvaluongnet(luong){
-    let thue = 0
-    let luongNet =0
-    if(luong>20000000){
-        thue = 0.2*luong
-    }
-    else if(luong>=8000000 && luong<=15000000){
-        thue = 0.15*luong
-    }
-    else if(luong>15000000 && luong<=20000000){
-        thue = 0.18*luong
-    }
-     luongNet = luong - thue
-    return{
-        Luongnet: luongNet,
-        ThueThuNhap: thue
-    }
-}
-var kq = thuethunhapvaluongnet(17000000)
-console.log("Thue Thu Nhap La:"+ kq.ThueThuNhap + "Luong net la:" + kq.Luongnet)
+// function thuethunhapvaluongnet(luong){
+//     let thue = 0
+//     let luongNet =0
+//     if(luong>=20000000){
+//         thue = 0.2*luong
+//     }
+//     else if(luong>=8000000 && luong<=15000000){
+//         thue = 0.15*luong
+//     }
+//     else if(luong>15000000 && luong<=20000000){
+//         thue = 0.18*luong
+//     }
+//      luongNet = luong - thue
+//     return{
+//         Luongnet: luongNet,
+//         ThueThuNhap: thue
+//     }
+// }
+// var kq = thuethunhapvaluongnet(17000000)
+// console.log("Thue Thu Nhap La:"+ kq.ThueThuNhap + "Luong net la:" + kq.Luongnet)
 //////
 // let arr = [3, 451, 5, 2, 6, 76, 3, 5, 1, 243, 6, 4]
 // let tansuatxuathien = {}
@@ -283,24 +283,24 @@ console.log("Thue Thu Nhap La:"+ kq.ThueThuNhap + "Luong net la:" + kq.Luongnet)
 // // - 200 đồng cho bất kỳ phút gọi nào sau 200 phút đầu tiên
 // // - Số phút gọi điện thoại của gia đình sẽ được nhập vào từ tham số của hàm
 
-// function giacuocdienthoai(sophutgoi){
-//     const phithuebaobatbuoc = 25000
-//     const phi50phutdautien = 600*50
-//     const phi150PhutTiepTheo = 400 * 150
-//     const phiSau200Phut = 200
-//     let giacuoc = 0
-//     if(sophutgoi>0){
-//         if(sophutgoi<=50){
-//             giacuoc = phithuebaobatbuoc + 600*sophutgoi
-//         }
-//         else if(sophutgoi<=200){
-//             giacuoc = phithuebaobatbuoc + phi50phutdautien +400*(sophutgoi - 50)
-//         }
-//         else{
-//             giacuoc = phithuebaobatbuoc + phi50phutdautien + phi150PhutTiepTheo + 200*(sophutgoi - 200)
-//         }
-//     }
-//     return giacuoc   
-// }
-// var kq = giacuocdienthoai(50)
-// console.log("Gia Cuoc Dien thoai la:",kq)
+function giacuocdienthoai(sophutgoi){
+    const phithuebaobatbuoc = 25000
+    const phi50phutdautien = 600*50
+    const phi150PhutTiepTheo = 400 * 150
+    const phiSau200Phut = 200
+    let giacuoc = 0
+    if(sophutgoi>0){
+        if(sophutgoi<=50){
+            giacuoc = phithuebaobatbuoc + 600*sophutgoi
+        }
+        else if(sophutgoi<=200){
+            giacuoc = phithuebaobatbuoc + phi50phutdautien +400*(sophutgoi - 50)
+        }
+        else{
+            giacuoc = phithuebaobatbuoc + phi50phutdautien + phi150PhutTiepTheo + 200*(sophutgoi - 200)
+        }
+    }
+    return giacuoc   
+}
+var kq = giacuocdienthoai(50)
+console.log("Gia Cuoc Dien thoai la:",kq)

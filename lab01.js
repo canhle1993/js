@@ -86,25 +86,25 @@
 // var trungBinhCong = (a + b) / 2
 // console.log("Trung bình cộng của", a, "và", b, "là:", trungBinhCong)
 // //c,
-var x = 3
-var y = 4
-var z = 6
-// Tính giá trị của các biểu thức
+// var x = 3
+// var y = 4
+// var z = 6
+// // Tính giá trị của các biểu thức
 
-var bieuThuc1 = Math.pow(x, 2) + 2 * x + 1
-var bieuThuc2 = Math.pow(x, 3) - 3 * x * y - 5 * y + 3 * Math.pow(y, 2)
-var bieuThuc3 = Math.pow(x * y, 2) - (2 * Math.pow(x, 2) * y) + (13 * y)
-var bieuThuc4 = 4 * Math.pow(x, 3) + 3 * x * y + Math.pow(y, 2) - (2 * Math.pow(x, 2) - 3 * y)
-var bieuThuc5 = (5 * Math.pow(x, 2) / 4 * x * y) + Math.pow(y, 2)
-var bieuthuc6 = Math.pow(x, 2) - 2 * z * x * y / Math.pow(y, 2) + 5 * x - 2 * Math.pow(y, 2) + 4 * x * Math.pow(z, 3) + Math.pow(z, 3)
+// var bieuThuc1 = Math.pow(x, 2) + 2 * x + 1
+// var bieuThuc2 = Math.pow(x, 3) - 3 * x * y - 5 * y + 3 * Math.pow(y, 2)
+// var bieuThuc3 = Math.pow(x * y, 2) - (2 * Math.pow(x, 2) * y) + (13 * y)
+// var bieuThuc4 = 4 * Math.pow(x, 3) + 3 * x * y + Math.pow(y, 2) - (2 * Math.pow(x, 2) - 3 * y)
+// var bieuThuc5 = (5 * Math.pow(x, 2) / 4 * x * y) + Math.pow(y, 2)
+// var bieuthuc6 = Math.pow(x, 2) - 2 * z * x * y / Math.pow(y, 2) + 5 * x - 2 * Math.pow(y, 2) + 4 * x * Math.pow(z, 3) + Math.pow(z, 3)
 
-console.log("Giá trị của biểu thức 1:", bieuThuc1)
-console.log("Giá trị của biểu thức 2:", bieuThuc2)
-console.log("Giá trị của biểu thức 3:", bieuThuc3)
-console.log("Giá trị của biểu thức 4:", bieuThuc4)
-console.log("Giá trị của biểu thức 5:", bieuThuc5)
-console.log("Giá trị của biểu thức 6:", bieuthuc6)
-// //d,
+// console.log("Giá trị của biểu thức 1:", bieuThuc1)
+// console.log("Giá trị của biểu thức 2:", bieuThuc2)
+// console.log("Giá trị của biểu thức 3:", bieuThuc3)
+// console.log("Giá trị của biểu thức 4:", bieuThuc4)
+// console.log("Giá trị của biểu thức 5:", bieuThuc5)
+// console.log("Giá trị của biểu thức 6:", bieuthuc6)
+// // //d,
 // var duongKinh = 5
 // var banKinh = duongKinh / 2; // Bán kính = Đường kính / 2
 // var pi = 3.14 // Giá trị xấp xỉ của pi
@@ -155,7 +155,7 @@ console.log("Giá trị của biểu thức 6:", bieuthuc6)
 // var quangDuong = vanToc * thoiGian
 
 // console.log("Quãng đường của cà nô trong 3 giờ là:", quangDuong, "km")
-// //i,
+//i,
 // var vanToc = 42; // Đơn vị: km/h
 // // Thời gian di chuyển từ 8 giờ 20 phút đến 11 giờ
 
@@ -166,7 +166,7 @@ console.log("Giá trị của biểu thức 6:", bieuthuc6)
 
 // console.log("Độ dài của quãng đường AB là:", quangDuong, "km")
 
-// //J
+//J
 // //chia hinh khối ra 4 phần ta có:
 // var dai = 8
 // var rong = 5
